@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="395.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupchatapp2.Controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/ChatLoginBackground.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="166.0" layoutY="25.0" text="Play Tech Pvt. Ltd.">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="118.0" text="Group">
+         <font>
+            <Font name="Broadway" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="191.0" text="Chat">
+         <font>
+            <Font name="Broadway" size="56.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtname" layoutX="153.0" layoutY="319.0" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: white;" />
+      <Label layoutX="251.0" layoutY="272.0" prefHeight="38.0" prefWidth="171.0" text="Your Name" textAlignment="RIGHT">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="478.0" layoutY="332.0" onAction="#btnChat" prefHeight="46.0" prefWidth="95.0" style="-fx-background-color: #18d64a;" text="Let's Chat" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Elephant" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

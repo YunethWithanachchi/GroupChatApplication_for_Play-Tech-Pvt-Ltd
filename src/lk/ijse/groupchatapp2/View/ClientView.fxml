@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="325.0" prefWidth="479.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.groupchatapp2.Controller.ClientController">
+   <children>
+      <Pane layoutY="17.0" prefHeight="383.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="369.0" fitWidth="600.0" layoutY="45.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/ChatBackground.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="117.0" layoutY="-11.0" prefHeight="35.0" prefWidth="377.0" text="Play Tech Pvt. Ltd. -  Group Chat" textFill="#00ff48">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="txtArea" disable="true" editable="false" layoutX="13.0" layoutY="58.0" opacity="0.85" prefHeight="262.0" prefWidth="574.0" style="-fx-background-color: white; -fx-text-fill: black;" unFocusColor="#ff5e00">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXTextArea>
+            <JFXTextField fx:id="txtmsg" layoutX="56.0" layoutY="334.0" prefHeight="35.0" prefWidth="478.0" style="-fx-background-color: white;" />
+            <JFXButton buttonType="RAISED" layoutX="538.0" layoutY="334.0" onAction="#btnSend" prefHeight="35.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-color: green; -fx-border-radius: 999;" text="Send" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblName" layoutX="229.0" layoutY="24.0" prefHeight="22.0" prefWidth="153.0" textFill="#ff51ff">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="13.0" layoutY="330.0" prefHeight="42.0" prefWidth="35.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutY="6.0" onMouseClicked="#btnattchment" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Addattchment.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
